@@ -1,0 +1,346 @@
+/**********
+GENERAL
+**********/
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: tomato;
+}
+
+h1 {
+    font-family: 'Arimo', sans-serif;
+    color: white;
+}
+
+h2 {
+    font-family: 'Arimo', sans-serif;
+}
+
+h3 {
+    font-family: 'Arimo', sans-serif;
+}
+
+p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.1em;
+    line-height: 140%;
+    font-weight: lighter;
+}
+
+li {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+/**********
+HEADER STYLES
+**********/
+
+.mainheader {
+    background-color: lightsteelblue;
+}
+
+.mainnav {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mainnav h1 {
+    margin: 0;
+    padding: 20px 0 10px;
+}
+
+.navlinks li {
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.mainintro {
+    text-align: center;
+}
+
+.profileimg {
+    display: block;
+    max-width: 70%;
+    margin: 40px auto 0;
+}
+
+.mainintro p {
+    width: 90%;
+    margin: 40px auto;
+    padding-bottom: 40px;
+}
+
+/**********
+PORTFOLIO STYLES
+**********/
+
+header p {
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mainportfolio h3 {
+    text-align: center;
+}
+
+.portfolioimg {
+    display: block;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.portdisplays {
+    text-align: center;
+}
+
+.mainportfolio {
+    margin-bottom: 40px;
+}
+
+/**********
+CONTACT STYLES
+**********/
+
+.maincontact {
+    color: white;
+}
+
+.maincontact {
+    padding-top: 40px;
+    background-color: lightsteelblue;
+    text-align: center;
+}
+
+.contactborder {
+    border-bottom: 1px solid black;
+}
+
+.phone,
+.email {
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+/**********
+FOOTER STYLES
+**********/
+
+.mainfooter {
+    color: white;
+}
+
+.mainfooter {
+    padding: 10px 0;
+}
+
+.footername,
+.footertop {
+    display: inline-block;
+}
+
+.footertop {
+    float: right;
+}
+
+.footerbackground {
+    background-color: lightsteelblue;
+}
+
+/**********
+MEDIA QUERIES
+**********/
+
+@media (min-width: 0) {
+    .footertop {
+        display: inline;
+    }
+    
+    .footerlinks {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) {
+    
+    .footertop {
+        display: none;
+    }
+    
+    .footerlinks {
+        display: inline-block;
+    }
+    
+    .footerlinks {
+        float: right;
+    }
+    
+    .footerlinks li {
+        float: left;
+        padding: 0 20px;
+    }
+    
+    .mainfooter {
+        padding-bottom: 40px;
+    }
+    
+    .mainnav li {
+        display: inline-block;
+        margin: 0 20px;
+        padding: 10 30px;
+        background-color: lightsteelblue;
+    }
+    
+    .profileimg,
+    .profiletext {
+        display: inline-block;
+        float: right;
+        padding: 0 0 40px 0;
+    }
+    
+    .profileimg {
+        width: 40%;
+        padding-left: 20px;
+    }
+    
+    .profiletext {
+        max-width: 60%;
+        text-align: left
+    }
+    
+    .container2 {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .container {
+        width: 95%;
+    }
+    
+    .portdisplays {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        height: 60%;
+    }
+    
+    .porttext1 {
+        font-size: 1em;
+    }
+    
+    .porttext2 {
+        font-size: .95em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    
+    .portdisplays {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .mainportfolio h3 {
+        padding-top: 20px;
+    }
+    
+    .mainportfolio {
+        padding-bottom: 30px;
+    }
+    
+    .contactdescription {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    /**********
+    CLEAR FIX
+    **********/
+    
+    .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .navname {
+        float: left;
+    }
+    
+    .mainnav {
+        display: inline-block;
+        float: right;
+        width: 100%;
+        text-align: right;
+    }
+    
+    .navlinks {
+        display: inline-block;
+    }
+    
+    .mainnav li {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    
+    .profiletext {
+        padding-right: 30px;
+    }
+    
+    .profileimg {
+        width: 40%;
+    }
+    
+    .portdisplays {
+        width: 33%;
+    }
+    
+    .contactborder {
+        padding-bottom: 40px;
+    }
+    
+    .mainfooter {
+        padding-bottom: 10px;
+    }
+    
+
+}
+
+
+
+
+
